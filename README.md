@@ -4,7 +4,7 @@
 ![](assets/Lambda_Configuration.png)
 Lambda API trigger:https://v747vpzw7j.execute-api.us-east-2.amazonaws.com/default/yfinance
 
-S3:https://yfinance1.s3.us-east-2.amazonaws.com/2020/05/24/19/yfinance-2-2020-05-24-19-36-11-97abd634-cd38-4a7f-905a-a3ab5dc130f0
+S3 Public:https://yfinance1.s3.us-east-2.amazonaws.com/2020/05/24/19/yfinance-2-2020-05-24-19-36-11-97abd634-cd38-4a7f-905a-a3ab5dc130f0
 
 # Kinesis Monitor
 ![](assets/Kinesis_Monitoring.png)
