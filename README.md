@@ -13,6 +13,9 @@ https://github.com/besthl/STA9760_Streaming-Finance-Data-with-AWS-Lambda/blob/ma
 # SQL Query
 https://github.com/besthl/STA9760_Streaming-Finance-Data-with-AWS-Lambda/blob/master/query.sql
 
+# Data Analysis
+https://github.com/besthl/STA9760_Streaming-Finance-Data-with-AWS-Lambda/blob/master/Analysis.ipynb
+
 # Lambda Deployment Package
 
 In order to run lambda functions that also manage dependencies, we must leverage a "deployment package", basically a zip file containing your lambda code _and_ all the dependencies it needs all packaged into a single artifact.
