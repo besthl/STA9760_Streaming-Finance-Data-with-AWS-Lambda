@@ -1,6 +1,5 @@
 import json
 import boto3
-import random
 import os
 import subprocess
 import sys
@@ -18,20 +17,16 @@ def lambda_handler(event, context):
     fh = boto3.client("firehose", "us-east-2")
     
     # get data using yfinance
-    d_len = len(CHOICES)
-    for j in range(0,d_len):
+    for j in range(0,len(CHOICES)):
         df = yf.download(CHOICES[j], start="2020-05-14", end="2020-05-15",interval='1m')
         output = []
         
-        # load data as dic
-        D_len = len(df)
-        for i in range(0,D_len):
+        # load data as dictionary
+        for i in range(0,len(df)):
             data = {"High":df['High'][i],"Low":df['Low'][i],"ts":df.index[i].strftime('%m/%d/%Y %X'),"name":CHOICES[j]}
     
              # convert it to JSON -- IMPORTANT!!
             as_jsonstr = json.dumps(data)
-    
-        
     
             # this actually pushed to our firehose datastream
              # we must "encode" in order to convert it into the
